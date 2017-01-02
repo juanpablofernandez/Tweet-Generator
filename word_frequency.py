@@ -18,9 +18,11 @@ def histogram(text):
 
 def unique_words(histogram):
     print len(histogram)
+    return len(histogram)
 
 def frequency(word, histogram):
     print histogram[word]
+    return histogram[word]
 
 histograms = histogram("holmes.txt")
 unique_words(histograms)
