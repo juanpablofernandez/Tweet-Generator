@@ -26,4 +26,4 @@ def frequency(word, histogram):
 
 histograms = histogram("holmes.txt")
 unique_words(histograms)
-frequency("could", histograms)
+frequency("holmes", histograms)

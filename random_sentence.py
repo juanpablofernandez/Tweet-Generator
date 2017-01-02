@@ -9,7 +9,7 @@ def words(text):
         word = word.lower()
         counter += 1
         if word in d:
-            value = d[word] 
+            value = d[word]
             value += 1
             d[word] = value
         else:
