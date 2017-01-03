@@ -35,7 +35,14 @@ def get_random_word(histogram):
             return key
         past_value = value
 
-word_list = histogram("frase.txt")
+def get_random_sentence(histogram, length):
+    sentence = ""
+    for i in range(0, length):
+        word = get_random_word(histogram)
+        sentence += word + " "
+    return sentence
+
+word_list = histogram("holmes.txt")
 word_list = word_probability(word_list)
 
 if __name__ == '__main__':
