@@ -37,14 +37,6 @@ def get_random_word(histogram):
 
 word_list = histogram("frase.txt")
 word_list = word_probability(word_list)
-print get_random_word(word_list)
 
-def test_random(histogram):
-    counter = {}
-    for i in range(0, 10000):
-        word = get_random_word(histogram)
-        if word not in counter:
-            counter[word] = 0
-        else:
-            counter[word] = counter[word] + 1
-    print counter
+if __name__ == '__main__':
+    print get_random_word(word_list)
