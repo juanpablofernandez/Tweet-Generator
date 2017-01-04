@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 import word_probability
 
 app = Flask(__name__)
